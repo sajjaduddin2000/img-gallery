@@ -81,5 +81,7 @@ def upload_photos():
     return jsonify({"message": "Upload successful"})
 
 # Use Gunicorn for Production Deployment
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=8000)
+if __name__ == "__app__":
+    port = int(os.environ.get("PORT", 8000))
+    app.run(host="0.0.0.0", port=port)
+
