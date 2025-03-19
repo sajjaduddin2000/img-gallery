@@ -1,0 +1,8 @@
+Flask
+gunicorn
+azure-storage-blob
+azure-mgmt-storage
+flask-wtf
+werkzeug
+requests
+waitress
